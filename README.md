@@ -25,6 +25,8 @@ new SEClip(clips, 0.5f, 1f, 0.1f, 127).Play();
 |Pause()|Pause all sound effects|
 |UnPause()|unpause all sound effects|
 
+(Some functions are omitted)
+
 We have extension methods "SEManagerExtensions" for AudioClip and AudioSource. Of the above functions, you can handle the Play system functions with ease.
 
 ## 📝 Notes
