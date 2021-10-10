@@ -4,40 +4,14 @@
 SEManager is a handy package that allows you to play sound effects without being aware of the AudioSource.
 Once SEManager is installed in your project, it will be automatically generated when the game is run.
 
-<details><summary>Sample code</summary><div>
-Play of sound effects is done as follows.
-
-``` AudioClipPlayer.cs
-using UnityEngine;
-Using Yamara.Audio;
-
-public class AudioClipPlayer : MonoBehaviour
-{
-    [SerializeField] AudioClip clip;
-
-    private void Start()
-    {
-        SEManager.Play(clip);
-    }
-}
+``` Sample code.cs
+// Play
+clip.Play();
+// Set volume, priority, and delay time.
+PlayDelayed(1f, 0.5f, 127);
+// Set multiple audio clips, volume, pitch, pitch range, and priority.
+new SEClip(clips, 0.5f, 1f, 0.1f, 127).Play();
 ````
-We also have an extension method to play AudioClip using SEManager, so you can also write.
-
-``` AudioClipPlayer.cs
-using UnityEngine;
-
-public class AudioClipPlayer : MonoBehaviour
-{
-    [SerializeField] AudioClip clip;
-
-    private void Start()
-    {
-        Play();
-    Play(); }
-}
-````
-
-</div></details>
 
 ## 🧮 Function
 
