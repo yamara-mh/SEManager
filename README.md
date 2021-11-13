@@ -17,17 +17,17 @@ new SEClip(clips, 0.5f, 1f, 0.1f, 127).Play();
 
 |function name|description|
 |-|-|
-|Play(AudioClip se)<br>Play(SEClip se)|Play|
-|Play(AudioSource audioSource, SEClip se)|Play with AudioSource specified|
-|PlayDelayed(AudioClip se, float delay)<br>PlayDelayed(SEClip se, float delay)|Delayed playback|
-|PlayDelayed(AudioSource audioSource, SEClip se, float delay)|Play delayed with AudioSource specified|
-|Stop()|Stop all sound effects|
-|Pause()|Pause all sound effects|
-|UnPause()|unpause all sound effects|
+|audioClip.Play()<br>audioClip.Play(float volume, byte priority)<br>seClip.Play()|Play|
+|seClip.Play(AudioSource audioSource)|Play with AudioSource specified|
+|audioClip.PlayDelayed(float delay)<br>seClip.PlayDelayed(float delay)|Delayed playback|
+|seClip.PlayDelayed(AudioSource audioSource, float delay)|Play delayed with AudioSource specified|
+|SEManager.Stop()|Stop all sound effects|
+|SEManager.Pause()|Pause all sound effects|
+|SEManager.UnPause()|Unpause all sound effects|
+|SEManager.VolumeToDecibel(float volume)|Convert values (range: 0 to 1) to decibels (range: -80 to 0)|
+|SEManager.DecibelToVolume(float decibel)|Convert decibels (range: -80 to 0) to values (range: 0 to 1)|
 
 (Some functions are omitted)
-
-We have extension methods "SEManagerExtensions" for AudioClip and AudioSource. Of the above functions, you can handle the Play system functions with ease.
 
 ## 📝 Notes
 
@@ -45,7 +45,7 @@ SEClip is a ScriptableObject that can be used to make sound effects less monoton
 |pitch|pitchRange|pitch blur range|
 
 # 🧰 Useful components
-The package contains some useful components related to SEManager and SEClip.
+The package contains some useful components related to SEManager and SEClip. Except for SEVolumeSlider, it is compressed with unitypackage, so please expand it when you use it.
 
 |component name|description|
 |-|-|
