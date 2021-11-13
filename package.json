@@ -9,9 +9,6 @@
     "Audio",
     "Manager"
   ],
-  "dependencies": {
-    "com.yamara.semanager": "https://github.com/0105takuyayamada/SEManager.git"
-  },
   "author": {
     "name": "Yamara",
     "email": "",
