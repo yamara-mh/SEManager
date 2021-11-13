@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "com.yamara.semanager": "https://github.com/0105takuyayamada/SEManager.git"
+  }
+}
