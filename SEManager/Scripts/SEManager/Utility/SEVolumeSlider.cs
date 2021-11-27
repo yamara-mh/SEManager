@@ -45,6 +45,6 @@ public class SEVolumeSlider : MonoBehaviour
 
     public void FluctVolume(float volume)
     {
-        mixer.SetFloat(KEY_NAME, SEManagerBody.VolumeToDecibel(volume));
+        mixer.SetFloat(KEY_NAME, SEManager.VolumeToDecibel(volume));
     }
 }

@@ -1,15 +1,12 @@
 {
     "name": "SEManager",
-    "rootNamespace": "",
-    "references": [
-        "GUID:0c56b23f8072bb14fb7a92a845126bb0"
-    ],
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
     "precompiledReferences": [],
-    "autoReferenced": false,
+    "autoReferenced": true,
     "defineConstraints": [],
     "versionDefines": [],
     "noEngineReferences": false
