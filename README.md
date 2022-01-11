@@ -4,6 +4,8 @@
 SEManager is a handy package that allows you to play sound effects without being aware of the AudioSource.
 Just install SEManager in your project and write the following code to play sound effects.
 ``` Sample code.cs
+[SerializeField] AudioClip clip;
+
 // Play
 clip.Play();
 // Set volume, priority, and delay time.
