@@ -2,8 +2,7 @@
 
 # ⚙️SEManager
 SEManager is a handy package that allows you to play sound effects without being aware of the AudioSource.
-Once SEManager is installed in your project, it will be automatically generated when the game is run.
-
+Just install SEManager in your project and write the following code to play sound effects.
 ``` Sample code.cs
 // Play
 clip.Play();
