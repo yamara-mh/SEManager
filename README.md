@@ -7,9 +7,9 @@ Just install SEManager in your project and write the following code to play soun
 [SerializeField] AudioClip clip;
 
 // Play
-clip.Play();
+clip.TryPlay();
 // Set volume, priority, and delay time.
-PlayDelayed(1f, 0.5f, 127);
+TryPlay(1f, 127, 0.5f);
 // Set multiple audio clips, volume, pitch, pitch range, and priority.
 new SEClip(clips, 0.5f, 1f, 0.1f, 127).Play();
 ````
@@ -18,10 +18,8 @@ new SEClip(clips, 0.5f, 1f, 0.1f, 127).Play();
 
 |function name|description|
 |-|-|
-|audioClip.Play()<br>audioClip.Play(float volume, byte priority)<br>seClip.Play()|Play|
-|seClip.Play(AudioSource audioSource)|Play with AudioSource specified|
-|audioClip.PlayDelayed(float delay)<br>seClip.PlayDelayed(float delay)|Delayed playback|
-|seClip.PlayDelayed(AudioSource audioSource, float delay)|Play delayed with AudioSource specified|
+|audioClip.TryPlay()<br>audioClip.TryPlay(float volume, byte priority, float delay)<br>seClip.TryPlay()<br>seClip.TryPlay(float delay)|Play|
+|seClip.Play(AudioSource audioSource)<br>seClip.Play(AudioSource audioSource, float delay)|Play with AudioSource specified|
 |SEManager.Stop()|Stop all sound effects|
 |SEManager.Pause()|Pause all sound effects|
 |SEManager.UnPause()|Unpause all sound effects|
@@ -31,9 +29,8 @@ new SEClip(clips, 0.5f, 1f, 0.1f, 127).Play();
 (Some functions are omitted)
 
 ## 📝 Notes
+The AudioMixerGroup used for SE playback and the maximum number of simultaneous playbacks can be set from SEManager / Resources / SEManagerSettings.asset.
 
-You can change the maximum number of simultaneous plays from SEManager / Resources / SEManagerSettings.asset.
-You can change the volume from SEManager / SEAudioMixer.mixer (for playback with AudioSource specified, specify SEAudioMixer for AudioMixer).
 # 💿SEClip
 SEClip is a ScriptableObject that can be used to make sound effects less monotonous. When played back with multiple AudioClips and a pitch blur range, the sound effect will sound with a random AudioClip and pitch. This allows for variation in the sound of bullets, footsteps, etc. Playback can be done on SEManager in the same way as with AudioClip.
 
@@ -46,7 +43,7 @@ SEClip is a ScriptableObject that can be used to make sound effects less monoton
 |pitch|pitchRange|pitch blur range|
 
 # 🧰 Useful components
-The package contains some useful components related to SEManager and SEClip. Except for SEVolumeSlider, it is compressed with unitypackage, so please expand it when you use it.
+The package contains useful components about SEManager and SEClip. Since it is compressed with unitypackage, please expand it when using it.
 
 |component name|description|
 |-|-|
