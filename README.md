@@ -11,7 +11,7 @@ clip.TryPlay();
 // Set volume, priority, and delay time.
 TryPlay(1f, 127, 0.5f);
 // Set multiple audio clips, volume, pitch, pitch range, and priority.
-new SEClip(clips, 0.5f, 1f, 0.1f, 127).Play();
+new SEClip(clips, 0.5f, 1f, 0.1f, 127).TryPlay();
 ````
 
 ## 🧮 Function
