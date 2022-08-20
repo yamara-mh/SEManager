@@ -13,3 +13,5 @@ MonoBehaviour:
   m_Name: SEManagerSettings
   m_EditorClassIdentifier: Assembly-CSharp:Yamara.Audio:SEManagerSettings
   audioSourceCount: 8
+  audioMixerGroup: {fileID: 1813608924851173670, guid: 3ac2d34ce20db6b4a9945f154724d8e3,
+    type: 2}

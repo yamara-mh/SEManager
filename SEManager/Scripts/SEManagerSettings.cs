@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Audio;
 
 namespace Yamara.Audio
 {
@@ -7,5 +8,8 @@ namespace Yamara.Audio
     {
         [SerializeField] int audioSourceCount = 8;
         public int AudioSourceCount { get { return audioSourceCount; } }
+
+        [SerializeField] AudioMixerGroup audioMixerGroup;
+        public AudioMixerGroup AudioMixerGroup { get { return audioMixerGroup; } }
     }
 }
