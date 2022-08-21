@@ -51,7 +51,7 @@ namespace Yamara.Audio
 
         #region Play
 
-        public static bool TryPlay(
+        public static bool Play(
             AudioClip se,
             float volume = 1f,
             byte priority = 0,
@@ -66,7 +66,7 @@ namespace Yamara.Audio
             _lowestPriority = _audioSources.Max(audio => audio.priority);
             return true;
         }
-        public static bool TryPlay(SEClip se, float delay = 0f)
+        public static bool Play(SEClip se, float delay = 0f)
         {
             if (se.priority > _lowestPriority) return false;
             Play(_audioSources.First(audio => audio.priority == _lowestPriority), se, delay);
