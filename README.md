@@ -7,9 +7,9 @@ Just install SEManager in your project and write the following code to play soun
 [SerializeField] AudioClip clip;
 
 // Play
-clip.TryPlay();
+clip.Play();
 // Set volume, priority, and delay time.
-TryPlay(1f, 127, 0.5f);
+Play(1f, 127, 0.5f);
 // Set multiple audio clips, volume, pitch, pitch range, and priority.
 new SEClip(clips, 0.5f, 1f, 0.1f, 127).TryPlay();
 ````
@@ -18,7 +18,7 @@ new SEClip(clips, 0.5f, 1f, 0.1f, 127).TryPlay();
 
 |function name|description|
 |-|-|
-|audioClip.TryPlay()<br>audioClip.TryPlay(float volume, byte priority, float delay)<br>seClip.TryPlay()<br>seClip.TryPlay(float delay)|Play|
+|audioClip.Play()<br>audioClip.Play(float volume, byte priority, float delay)<br>seClip.Play()<br>seClip.Play(float delay)|Play|
 |seClip.Play(AudioSource audioSource)<br>seClip.Play(AudioSource audioSource, float delay)|Play with AudioSource specified|
 |SEManager.Stop()|Stop all sound effects|
 |SEManager.Pause()|Pause all sound effects|
